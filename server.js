@@ -28,7 +28,7 @@ const DeprecationWarning = {
     useUnifiedTopology: true,
 };
 // for mongoose to heroku
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", DeprecationWarning)
+mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://fitnesstracker:1234@cluster0.i7njn.mongodb.net/fitnesstrackerdb?retryWrites=true&w=majority", DeprecationWarning)
     .then(() => {
         app.listen(PORT, () => {
             console.log(`localhost:${PORT}`);
