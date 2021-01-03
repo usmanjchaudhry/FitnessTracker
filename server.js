@@ -28,7 +28,7 @@ const DeprecationWarning = {
     useUnifiedTopology: true,
 };
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://regular:regular@cluster0.pnfjj.mongodb.net/fitnessTracker?retryWrites=true&w=majority", DeprecationWarning)
+mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://fitnesstracker:1234@cluster0.i7njn.mongodb.net/fitnesstrackerdb?retryWrites=true&w=majority", DeprecationWarning)
     .then(() => {
         app.listen(PORT, () => {
             console.log(`localhost:${PORT}`);
