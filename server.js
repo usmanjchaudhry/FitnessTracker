@@ -27,7 +27,7 @@ const DeprecationWarning = {
     useFindAndModify: false,
     useUnifiedTopology: true,
 };
-// for mongoose to heroku
+
 mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://regular:regular@cluster0.pnfjj.mongodb.net/fitnessTracker?retryWrites=true&w=majority", DeprecationWarning)
     .then(() => {
         app.listen(PORT, () => {
